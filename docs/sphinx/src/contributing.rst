@@ -7,7 +7,7 @@ Contributing
 To contribute to ``athelas``, feel free to submit a pull
 request or open an issue.
 
-1. Create a new fork or branch of off ``main`` where your changes can be made.
+1. Create a new fork or branch off of ``main`` where your changes can be made.
 2. When ready, create a pull request, describe what you've done
    and ensure the branch has no conflicts.
 3. At least one Maintainer will review the PR.
