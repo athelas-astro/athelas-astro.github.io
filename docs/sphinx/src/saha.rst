@@ -293,7 +293,7 @@ These are provided for convenience but the user can supply their own.
 
 Configuration
 --------------
-The ``ionization`` physics has a few controls in the ``[ionization]`` block.
+The ``ionization`` physics has a few controls in the ``ionization`` table.
 The paths to the ionization potentials and degeneracy factors must 
 be specified. The provided data are stored in ``athelas/data`` and can be set 
 with ``fn_ionization`` and ``fn_degeneracy``. These are required when 
