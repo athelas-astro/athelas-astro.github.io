@@ -17,10 +17,14 @@ Key Features
 * A ``thermal engine`` for artificially driving supernovae.
 * A modular ``package`` system that automatically threads new physics into the timestepper.
 
+``Athelas`` is open source developed as a tool for the community.
+Check it out on `GitHub`_!
+
 .. image:: _static/logo.png
    :align: center
    :width: 300px
 
+.. _GitHub: https://github.com/athelas-astro/athelas
 .. _Athelas: https://github.com/athelas-astro/athelas
 .. _Kokkos: github.com/kokkos/kokkos
 
