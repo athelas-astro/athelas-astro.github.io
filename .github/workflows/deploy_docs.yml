@@ -1,0 +1,48 @@
+name: Build and Deploy Sphinx Docs
+
+on:
+  push:
+    branches:
+      - source
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install "sphinx<9"
+          pip install sphinx-rtd-theme
+          pip install sphinx-book-theme
+          pip install sphinx-sitemap
+          pip install sphinx-multiversion
+          pip install sphinx-copybutton
+          # Add any other Sphinx extensions here
+
+      - name: Build docs
+        run: |
+          # We run sphinx-build on the docs folder and output to _build
+          cd docs/sphinx
+          make multiversion SPHINXOPTS="-W --keep-going -n"
+          # sphinx-build -b html docs/sphinx _build/html
+
+      - name: Deploy to Main Branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/sphinx/_build/html
+          publish_branch: main
+          # This ensures the root of your-org.github.io is the HTML
+          force_orphan: true
+
