@@ -322,11 +322,14 @@ Ionization is controlled in the input deck as follows:
 
 .. code::
 
-   [physics]
-   ionization = true
+    config.physics = {
+      -- ...
+      ionization = true,
+    }
 
-   [ionization]
-   fn_ionization = "../data/atomic_data_ionization.dat" [Required]
-   fn_degeneracy = "../data/atomic_data_degeneracy_factors.dat" [Required]
-   ncomps = 3 # must be <= [composition.ncomps] !! [Required]
-   solver = "linear" # or "log" [Optional]
+    config.ionization = {
+      fn_ionization = "../data/atomic_data_ionization.dat", -- [Required]
+      fn_degeneracy = "../data/atomic_data_degeneracy_factors.dat", -- [Required]
+      ncomps = 1, -- [Required]; must be <= composition.ncomps
+      solver = "log", -- [Optional], inear or log
+    }

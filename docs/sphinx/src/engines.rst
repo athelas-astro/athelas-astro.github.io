@@ -92,15 +92,22 @@ Input Deck
 ----------
 The ``ThermalEngine`` is controlled in the input deck as follows:
 
-.. code::
+.. code:: lua
 
-   [physics]
-   engine = true
+    local foe = 1.0e51 -- erg
+    local config = {}
 
-   [engine.thermal]
-   enabled = true 
-   mode = "asymptotic" # or "direct"
-   energy = 1.5e51 # erg
-   tend = 0.1 # seconds
-   mend = 0.1 # Msun
+    config.physics = {
+      -- ...
+      engine = true,
+    }
 
+    config.engine = {
+      thermal = {
+        enabled = true,
+        mode = "asymptotic", -- asymptotic or direct
+        energy = 1.0 * foe,
+        tend = 0.1, -- seconds
+        mend = 0.1, -- Msun
+      },
+    }
