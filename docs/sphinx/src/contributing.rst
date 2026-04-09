@@ -155,7 +155,8 @@ constructive environment, as discussed below.
 Expectations of code reviewers
 ````````````````````````````````
 
-A good code review builds a contribution up, rather than tearing it
+A good code review is similar to a good review of an academic paper:
+it builds a contribution up, rather than tearing it
 down. Here are a few rules to keep code reviews constructive and
 congenial:
 
