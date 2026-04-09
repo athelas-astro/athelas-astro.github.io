@@ -197,6 +197,8 @@ AI Policy
 and functionality. Generative AI is rapidly changing the way code is written.
 As a scientific tool for the community, we must ensure that the code base 
 stays maintainable, understandable, clean, and correct.
+The following guidelines apply to contributed code (pull requests) 
+as well as issues.
 
 .. note::
 
