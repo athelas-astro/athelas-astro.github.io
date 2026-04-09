@@ -1,9 +1,15 @@
 .. _Catch2: https://github.com/catchorg/Catch2
 .. _singularity-eos: https://lanl.github.io/singularity-eos
 .. _JOSS: https://joss.theoj.org/about#ai-policy
+.. _cc: https://www.conventionalcommits.org/en/v1.0.0/
 
 Contributing
 =============================
+
+Thank you for your interest in contributing to ``Athelas``! 
+This document provides current guidelines and information for contributors. 
+As a general rule, these are not not set in stone but subject to possible 
+change, dicussion, and revision.
 
 To contribute to ``athelas``, feel free to submit a pull
 request or open an issue.
@@ -18,6 +24,33 @@ request or open an issue.
 5. At present, Releases (with a git version tag) for the ``main`` branch
    of ``athelas`` will occur at a 6 to 12 month cadence or following
    implementation of a major enhancement or capability to the code base.
+
+Branching Strategy
+``````````````````
+* Create feature branches from the main development branch.
+* To keep things orderly, contributors are encouraged to create branches 
+  starting with their username or initials followed by a "/" and ending 
+  with a brief description, e.g., ``blb/implicit_transport``.
+* Keep branches focused on a single feature or fix.
+
+Please try to keep PRs small and targeted, as this makes the reviewing 
+process simpler, faster, and helps avoid things slipping into the codebase 
+that we otherwise might not want.
+
+Even if your PR is not ready you may feel free to open a draft PR marked with 
+"[WIP]" in the title. These are not merged until [WIP] is removed and can be 
+convenient as GitHub's tests will launch even on the draft PR.
+
+Commit Messages
+````````````````
+* Use clear, descriptive commit messages
+* Follow `conventional commit <cc_>`_ format when possible:
+  * ``feat``: for new features
+  * ``fix``: for bug fixes
+  * ``docs``: for documentation changes
+  * ``test``: for test additions/changes
+  * ``refactor``: for code refactoring
+  * ``style``: for formatting changes
 
 
 Pull request protocol
@@ -52,10 +85,11 @@ In order for a pull request to merge, we require:
 - Pass the existing test suite
 - Have at least one approval from a Maintainer
 - Update `CHANGELOG.md`
+- If generative or agentic AI was used, add an appropriate disclosure (:ref:ai).
 - If applicable:
 
   - Write new tests for new features or bugs
-  - Include or update documentation in ``docs/``
+  - Include or update documentation.
 
 Test Suite
 ----------
@@ -189,6 +223,8 @@ General principle for everyone
 It's hard to convey tone in text correspondance. Try to read what
 others write favorably and try to write in such a way that your tone
 can't be mis-interpreted as malicious.
+
+.. ai:
 
 AI Policy
 ---------
