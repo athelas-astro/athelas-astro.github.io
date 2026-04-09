@@ -88,7 +88,7 @@ In order for a pull request to merge, we require:
 - Pass the existing test suite
 - Have at least one approval from a Maintainer
 - Update `CHANGELOG.md`
-- If generative or agentic AI was used, add an appropriate disclosure (:ref:ai).
+- If generative or agentic AI was used, add an appropriate disclosure (`:ref:ai`).
 - If applicable:
 
   - Write new tests for new features or bugs
