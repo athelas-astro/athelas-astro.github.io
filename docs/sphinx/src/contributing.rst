@@ -1,5 +1,6 @@
 .. _Catch2: https://github.com/catchorg/Catch2
 .. _singularity-eos: https://lanl.github.io/singularity-eos
+.. _JOSS: https://joss.theoj.org/about#ai-policy
 
 Contributing
 =============================
@@ -116,10 +117,6 @@ Expectations for code review
 .. note::
    Much of what follows is adapted from `singularity-eos`_.
 
-.. note::
-
-   All code review will be conducted by humans and not by agentic AI.
-
 From the perspective of the contributor
 ````````````````````````````````````````
 
@@ -191,3 +188,32 @@ General principle for everyone
 It's hard to convey tone in text correspondance. Try to read what
 others write favorably and try to write in such a way that your tone
 can't be mis-interpreted as malicious.
+
+AI Policy
+`````````
+
+``Athelas`` strives to maintain a high standard of code style, design, 
+and functionality. Generative AI is rapidly changing the way code is written.
+As a scientific tool for the community, we must ensure that the code base 
+stays maintainable, understandable, clean, and correct.
+
+.. note::
+
+   The following is inspired by the generative AI policy used in the 
+   Journal of Open Source Software (`JOSS`_).
+
+The use of generative AI for code submissions is allowed, however, 
+all such contributions must be disclosed in the pull request. This includes:
+
+* Tool use: The tools/models used (and versions) and where 
+  they were used (code, text, docs, etc).
+* The nature and scope of assistance: e.g., code generation, refactoring, 
+  test scaffolding, documenting, drafting, prototyping.
+* Confirmation of review: Authors must assert that human contributors reviewed, 
+  edited, validated all AI-assisted outputs and made the core design decisions.
+
+Failure to provide a disclosure may result in closing of the pull request 
+and rejection of the contributions. Repeated offenses may result in the user 
+being blocked from the repository.
+
+All code review, including conversation, will be conducted by humans.
