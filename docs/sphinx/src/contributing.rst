@@ -22,6 +22,10 @@ request or open an issue.
 Pull request protocol
 ----------------------
 
+.. note::
+
+   All code review will be conducted by humans and not by agentic AI.
+
 When submitting a pull request, there is a default template that is automatically
 populated. The pull request should sufficiently summarize all changes.
 As necessary, tests should be added for new features of bugs fixed.
