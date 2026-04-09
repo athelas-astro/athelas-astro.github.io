@@ -227,7 +227,7 @@ It's hard to convey tone in text correspondance. Try to read what
 others write favorably and try to write in such a way that your tone
 can't be mis-interpreted as malicious.
 
-.. ai:
+.. _ai:
 
 AI Policy
 ---------
