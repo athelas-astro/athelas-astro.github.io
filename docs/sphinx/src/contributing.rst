@@ -99,7 +99,7 @@ Test Suite
 
 Several sets of tests are triggered on a pull request: a static format
 check, a docs buld, build on multiple compilers, and a suite of unit and regression tests.
-These are run through github's CI infrastructure. These tests
+These are run through GitHub's CI infrastructure. These tests
 help ensure that modifications to the code do not break existing capabilities
 and ensure a consistent code style.
 
