@@ -191,7 +191,7 @@ others write favorably and try to write in such a way that your tone
 can't be mis-interpreted as malicious.
 
 AI Policy
-`````````
+---------
 
 ``Athelas`` strives to maintain a high standard of code style, design, 
 and functionality. Generative AI is rapidly changing the way code is written.
