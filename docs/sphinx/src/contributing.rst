@@ -116,6 +116,10 @@ Expectations for code review
 .. note::
    Much of what follows is adapted from `singularity-eos`_.
 
+.. note::
+
+   All code review will be conducted by humans and not by agentic AI.
+
 From the perspective of the contributor
 ````````````````````````````````````````
 
