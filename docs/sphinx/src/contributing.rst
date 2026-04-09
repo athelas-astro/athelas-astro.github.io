@@ -11,6 +11,9 @@ This document provides current guidelines and information for contributors.
 As a general rule, these are not not set in stone but subject to possible 
 change, dicussion, and revision.
 
+Overview
+--------
+
 To contribute to ``athelas``, feel free to submit a pull
 request or open an issue.
 
