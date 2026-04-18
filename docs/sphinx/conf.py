@@ -55,6 +55,15 @@ todo_include_todos = True
 
 # baseurl for sitemap
 html_baseurl = "https://athelas-astro.github.io"
+html_js_files = [
+    (
+        "https://gc.zgo.at/count.js",
+        {
+            "async": "async",
+            "data-goatcounter": "https://astrobarker.goatcounter.com/count",
+        },
+    ),
+]
 #html_sidebars = {
 #    '**': [
 #        'versioning.html',
