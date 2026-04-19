@@ -10,7 +10,7 @@ Key Features
 * Gray two moment radiation transport
 * Lagrangian hydrodynamics
 * High order discontinuous Galerkin methods
-* Fully coupled IMEX time integration
+* Fully coupled implicit-explicit time integration
 * Radioactive heating from Nickel and Cobalt decay including gammas and positrons.
 * Saha ionization with feedback into the equation of state
 * Shared memory parallelism with `Kokkos`_
