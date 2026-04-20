@@ -92,7 +92,7 @@ Run ``Athelas`` from the ``build`` directory as
 
    ./athelas -i path/to/input/file.lua
 
-The input files are in ``athelas/inputs/*``. 
+The Lua input decks are in ``athelas/inputs/*.lua``. 
 
 Dependencies
 ------------
