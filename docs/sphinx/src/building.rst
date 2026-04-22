@@ -9,13 +9,13 @@ To make sure you get them all, clone it as
 
 .. code:: bash
 
-   git clone --recursive git@github.com:athelas-astro/athelas.git
+   git clone --recursive https://github.com/athelas-astro/athelas.git
 
 or as
 
 .. code:: bash
 
-   git clone git@github.com:athelas-astro/athelas.git
+   git clone https://github.com/athelas-astro/athelas.git
    cd athelas
    git submodule update --init --recursive
 
