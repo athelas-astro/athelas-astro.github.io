@@ -90,9 +90,11 @@ Run ``Athelas`` from the ``build`` directory as
 
 .. code:: bash
 
-   ./athelas -i path/to/input/file.lua
+   ./athelas -i path/to/input/file.lua -o output/dir
 
-The Lua input decks are in ``athelas/inputs/*.lua``. 
+The Lua input decks are in ``athelas/inputs/*.lua``. The output directory is 
+optional (the default is the current working directory) but the input deck is 
+required.
 
 Dependencies
 ------------
